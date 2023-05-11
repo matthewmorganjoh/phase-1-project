@@ -17,8 +17,11 @@ searchForm.addEventListener('submit', function(event) {
       const productName = document.createElement('h2');
       productName.textContent = product.name;
 
+      const productImage = document.createElement('img');
+      productImage.src = product.image;
+
       resultsContainer.appendChild(productName);
-      
+      resultsContainer.appendChild(productImage);
     })
     .catch(error => {
       console.error('Error:', error);
