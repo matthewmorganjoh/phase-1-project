@@ -18,7 +18,27 @@
   <div id="results-container"></div>
   <div id="error-message"></div>
   <div id="loading-state"></div>
-
+  
+  <div id="filter-container">
+    <label for="filter">Filter by:</label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="Monsters">Monsters</option>
+      <option value="Weapons">Weapons</option>
+    </select>
+  </div>
+  
+  <div id="sort-container">
+    <label>Sort by:</label>
+    <div>
+      <input type="radio" id="sort-relevance" name="sort" value="relevance" checked>
+      <label for="sort-relevance">Relevance</label>
+    </div>
+    <div>
+      <input type="radio" id="sort-rating" name="sort" value="rating">
+      <label for="sort-rating">Rating</label>
+    </div>
+  </div>
 
   <script src="index.js"></script>
 </body>
