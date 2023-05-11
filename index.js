@@ -41,6 +41,7 @@ searchForm.addEventListener('submit', function(event) {
       resultsContainer.appendChild(productImage);
       resultsContainer.appendChild(productDescription);
     })
+
     
     .catch(error => {
       console.error('Error:', error);
