@@ -6,7 +6,7 @@ searchForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   const name = event.target.name.value;
-  const formattedName = name.replace(/ /g, "_");
+  const formattedName = name.replace(/ /g, "_"); // fix the formatting for search
 
   fetch(`https://botw-compendium.herokuapp.com/api/v2/entry/${formattedName}`)
     .then(response => {
