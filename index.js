@@ -20,8 +20,14 @@ searchForm.addEventListener('submit', function(event) {
       const productImage = document.createElement('img');
       productImage.src = product.image;
 
+      const productDescription = document.createElement('h3');
+      productDescription.textContent = product.description;
+
+
+
       resultsContainer.appendChild(productName);
       resultsContainer.appendChild(productImage);
+      resultsContainer.appendChild(productDescription);
     })
     .catch(error => {
       console.error('Error:', error);
