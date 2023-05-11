@@ -2,6 +2,7 @@ const searchForm = document.getElementById('search-form');
 const resultsContainer = document.getElementById('results-container');
 const errorMessage = document.getElementById('error-message');
 const loadingState = document.getElementById('loading-state');
+const clearButton = document.getElementById('clear-button');
 
 searchForm.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -42,7 +43,7 @@ searchForm.addEventListener('submit', function(event) {
       resultsContainer.appendChild(productDescription);
     })
 
-    
+
     .catch(error => {
       console.error('Error:', error);
       resultsContainer.innerHTML = '';
@@ -50,6 +51,12 @@ searchForm.addEventListener('submit', function(event) {
 
       loadingState.style.display = 'none';
     });
+});
+
+clearButton.addEventListener('click', function(){
+    searchForm.reset();
+    resultsContainer.innerHTML = '';
+    errorMessage.textContent = '';
 });
 
 
