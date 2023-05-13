@@ -100,8 +100,8 @@ function updatePreviouslyViewed() {
     const itemContainer = document.createElement('div');
     itemContainer.classList.add('previously-viewed-item');
     itemContainer.dataset.item = item;
-    itemContainer.appendChild(img);
     itemContainer.appendChild(imgName);
+    itemContainer.appendChild(img);
 
     previouslyViewedContainer.appendChild(itemContainer);
   });
