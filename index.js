@@ -93,10 +93,15 @@ function updatePreviouslyViewed() {
     img.src = `https://botw-compendium.herokuapp.com/api/v2/entry/${item}/image`;
     img.alt = 'Previously Viewed';
 
+    const imgName = document.createElement('p');
+    imgName.textContent = item;
+
+
     const itemContainer = document.createElement('div');
     itemContainer.classList.add('previously-viewed-item');
     itemContainer.dataset.item = item;
     itemContainer.appendChild(img);
+    itemContainer.appendChild(imgName);
 
     previouslyViewedContainer.appendChild(itemContainer);
   });
