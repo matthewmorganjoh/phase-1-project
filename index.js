@@ -21,7 +21,7 @@ searchForm.addEventListener('submit', function(event) {
   fetch(`https://botw-compendium.herokuapp.com/api/v2/entry/${formattedName}`)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Error occurred.');
+        throw new Error('Error occurred. Search was not found at https://botw-compendium.herokuapp.com/api/v2');
       }
       return response.json();
     })
