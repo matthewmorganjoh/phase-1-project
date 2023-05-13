@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 21px;
-    background-color: aquamarine;
+    padding: 20px;
+    background-color: turquoise;
+    max-width: 900px;
   }
   
   h1 {
@@ -10,7 +11,10 @@ body {
   }
   
   form {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 4px;
   }
   
   label {
@@ -46,6 +50,19 @@ body {
   
   #results-container {
     margin-top: 20px;
+  }
+
+  .previously-viewed-item {
+    display:inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .previously-viewed-item img {
+    display:block;
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
   }
   
   h2 {

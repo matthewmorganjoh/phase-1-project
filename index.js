@@ -5,7 +5,7 @@ const loadingState = document.getElementById('loading-state');
 const clearButton = document.getElementById('clear-button');
 const previouslyViewedContainer = document.getElementById('previously-viewed-container'); 
 
-const MAX_PREVIOUSLY_VIEWED = 3;
+const MAX_PREVIOUSLY_VIEWED = 4;
 let previouslyViewedItems = []; // Store previously viewed items
 
 searchForm.addEventListener('submit', function(event) {
@@ -81,7 +81,7 @@ function addToPreviouslyViewed(item) {
   previouslyViewedItems.unshift(item);
 
   if (previouslyViewedItems.length > MAX_PREVIOUSLY_VIEWED) {
-    previouslyViewedItems.push();
+    previouslyViewedItems.pop();
   }
 };
 
