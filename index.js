@@ -81,7 +81,7 @@ function addToPreviouslyViewed(item) {
   previouslyViewedItems.unshift(item);
 
   if (previouslyViewedItems.length > MAX_PREVIOUSLY_VIEWED) {
-    previouslyViewedItems.pop();
+    previouslyViewedItems.push();
   }
 };
 
