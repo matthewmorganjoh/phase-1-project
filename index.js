@@ -63,6 +63,8 @@ clearButton.addEventListener('click', function() {
   searchForm.reset();
   resultsContainer.innerHTML = '';
   errorMessage.textContent = '';
+  previouslyViewedContainer.innerHTML = '';
+  previouslyViewedItems = [];
 });
 
 previouslyViewedContainer.addEventListener('click', function(event) {
