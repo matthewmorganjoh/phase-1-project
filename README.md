@@ -22,4 +22,5 @@ Click the "Clear" button to reset the entire page to baseline.
 ## API
 This project uses the [BOTW Compendium API](https://botw-compendium.herokuapp.com/api/v2). 
 
-
+## License
+This project grants all rights under the public domain. 
